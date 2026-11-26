@@ -1,14 +1,15 @@
 {
   "name": "botpassport",
   "version": "0.1.0",
-  "description": "The IP addresses search engines and AI crawlers publish, merged into one list for firewalls, CrowdSec, nginx, Caddy and nftables, refreshed daily.",
+  "description": "Allowlist AI crawlers and search engine bots (GPTBot, ClaudeBot, PerplexityBot, Googlebot, bingbot) by their official IP ranges, for CrowdSec, nginx, Caddy and nftables.",
   "type": "module",
   "exports": "./src/index.js",
   "bin": {
     "botpassport": "src/cli.js"
   },
   "files": [
-    "src"
+    "src",
+    "llms.txt"
   ],
   "engines": {
     "node": ">=22"
@@ -18,16 +19,36 @@
     "test": "node --test test/"
   },
   "keywords": [
-    "crawler",
+    "ai-crawlers",
+    "crawler-ip-ranges",
+    "bot-allowlist",
     "allowlist",
+    "whitelist",
     "crowdsec",
+    "crowdsec-allowlist",
     "firewall",
+    "nginx",
+    "caddy",
+    "nftables",
     "gptbot",
+    "chatgpt-user",
+    "oai-searchbot",
     "claudebot",
-    "googlebot",
     "perplexitybot",
+    "googlebot",
+    "bingbot",
+    "applebot",
+    "amazonbot",
+    "ccbot",
+    "verified-bots",
+    "good-bots",
     "geo",
-    "ai-crawlers"
+    "generative-engine-optimization",
+    "seo",
+    "ai-search",
+    "llm-crawlers",
+    "reverse-dns",
+    "ip-ranges"
   ],
   "repository": {
     "type": "git",
@@ -40,5 +61,6 @@
     "@eslint/js": "^10.0.1",
     "eslint": "^10.15.0",
     "globals": "^17.14.0"
-  }
+  },
+  "author": "La Boétie (https://laboetie.io/open-source)"
 }

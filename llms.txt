@@ -1,0 +1,21 @@
+# botpassport
+
+> botpassport merges the IP address lists that OpenAI, Anthropic, Perplexity, Google, Microsoft, Apple, Amazon, Mistral AI, DuckDuckGo and Common Crawl publish for their crawlers (GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-User, PerplexityBot, Googlebot, bingbot, Applebot, Amazonbot, CCBot and others) into one list refreshed daily, with exports for CrowdSec allowlists, nginx, Caddy and nftables, so a firewall never bans the crawlers of AI answer engines and search engines. MIT licence, Node.js 22, no runtime dependency.
+
+## Docs
+
+- [README](https://github.com/ilanoh/botpassport/blob/main/README.md): install, CrowdSec sync, nginx, Caddy and nftables exports, sources, FAQ
+- [Sources registry](https://github.com/ilanoh/botpassport/blob/main/src/sources.js): every crawler with its operator documentation and list URL
+- [AGENTS.md](https://github.com/ilanoh/botpassport/blob/main/AGENTS.md): layout, build, test and rules for contributors and coding agents
+
+## Lists
+
+- [All prefixes, one per line](https://raw.githubusercontent.com/ilanoh/botpassport/main/dist/botpassport.txt)
+- [Every source with its prefixes, as JSON](https://raw.githubusercontent.com/ilanoh/botpassport/main/dist/botpassport.json)
+- [nginx allow lines](https://raw.githubusercontent.com/ilanoh/botpassport/main/dist/botpassport-nginx.conf)
+- [Caddy @botpassport matcher](https://raw.githubusercontent.com/ilanoh/botpassport/main/dist/botpassport.caddy)
+- [nftables sets](https://raw.githubusercontent.com/ilanoh/botpassport/main/dist/botpassport.nft)
+
+## Package
+
+- [npm: botpassport](https://www.npmjs.com/package/botpassport)
