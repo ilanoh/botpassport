@@ -1,0 +1,44 @@
+{
+  "name": "botpassport",
+  "version": "0.1.0",
+  "description": "The IP addresses search engines and AI crawlers publish, merged into one list for firewalls, CrowdSec, nginx, Caddy and nftables, refreshed daily.",
+  "type": "module",
+  "exports": "./src/index.js",
+  "bin": {
+    "botpassport": "src/cli.js"
+  },
+  "files": [
+    "src"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "node --test test/"
+  },
+  "keywords": [
+    "crawler",
+    "allowlist",
+    "crowdsec",
+    "firewall",
+    "gptbot",
+    "claudebot",
+    "googlebot",
+    "perplexitybot",
+    "geo",
+    "ai-crawlers"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilanoh/botpassport.git"
+  },
+  "homepage": "https://github.com/ilanoh/botpassport#readme",
+  "bugs": "https://github.com/ilanoh/botpassport/issues",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.15.0",
+    "globals": "^17.14.0"
+  }
+}
